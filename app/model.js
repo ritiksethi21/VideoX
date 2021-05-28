@@ -10,7 +10,7 @@ exports.saveCallId = (key, value) => {
     });
   });
 };
-
+// Created for listening continuously for a day.
 exports.getCallId = (key) => {
   return new Promise((resolve, reject) => {
     redisClient.GET(key, (err, res) => {
