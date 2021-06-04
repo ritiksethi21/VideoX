@@ -1,0 +1,55 @@
+.frame-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
+    .header-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      flex: 1;
+      border-right: 1px solid rgb(236, 236, 236);
+      position: relative;
+      .alert-circle-icon {
+        position: absolute;
+        background: #daf105;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid rgb(216, 27, 27);
+        top: 10px;
+        right: 20px;
+      }
+      &.date-block {
+        font-size: 22px;
+        color: #5f6368;
+        min-width: 120px;
+        font-weight: 400;
+      }
+      &.icon-block {
+        .icon {
+          color: #505357;
+          font-size: 22px;
+          &.profile {
+            font-size: 32px;
+            color: #f7640f;
+          }
+          &.profile2 {
+            font-size: 25px;
+            color: #f7640f;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          background: #eee;
+        }
+      }
+    }
+  }
